@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#171b19"><title>今天拍点啥 · 会饮酿造</title>
+<style>
+:root{--bg:#171b19;--panel:#1e2420;--ink:#eeeade;--sub:#a2a99b;--line:#ffffff20;--accent:#ced8a4}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}button{font:inherit;cursor:pointer}button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}button:disabled{cursor:wait} .page{max-width:1320px;padding:34px 64px 24px;margin:auto}header{display:flex;justify-content:space-between;align-items:center;padding-bottom:27px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:14px;font-size:17px;letter-spacing:3px;font-weight:600}.seal{width:31px;height:31px;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;font-family:serif;font-size:18px;transform:rotate(-6deg)}.micro{font:10px/1.6 ui-monospace,monospace;letter-spacing:2px;color:var(--sub)}.intro{padding:52px 0 31px;display:flex;justify-content:space-between;align-items:end}.eyebrow{color:var(--accent);font-size:10px;letter-spacing:3px;margin-bottom:16px}h1{font-weight:400;font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:clamp(36px,4.2vw,58px);letter-spacing:3px;margin:0}.intro p{font-size:12px;line-height:2;color:var(--sub);margin:0 0 4px}.categories{display:flex;gap:9px;flex-wrap:wrap}.category{border:1px solid var(--line);border-radius:3px;color:#b3b9ad;background:transparent;padding:11px 19px;font-size:12px;transition:.2s}.category:hover{border-color:#9aa77b;color:var(--ink)}.category.active{background:var(--accent);border-color:var(--accent);color:#20271e}.stage{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center;padding:35px 0 40px}.wheel-area{text-align:center;min-width:0}.wheel-top{display:flex;justify-content:space-between;max-width:415px;margin:0 auto 18px}.wheel-shell{position:relative;width:min(100%,420px);aspect-ratio:1;margin:auto;padding:14px;overflow:hidden;border:1px solid #ffffff15;border-radius:50%}.wheel-shell:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:2;border-left:6px solid transparent;border-right:6px solid transparent;border-top:15px solid var(--accent)}#wheel{display:block;width:100%;height:100%;overflow:visible;will-change:transform}.hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid #6b755c;border-radius:50%;width:84px;height:84px;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 0 8px #171b19a0}.hub strong{font-family:serif;font-size:22px;font-weight:400;letter-spacing:3px}.hub span{font-size:7px;letter-spacing:2px;color:var(--sub);margin-top:5px}.wheel-caption{font-size:10px;color:var(--sub);letter-spacing:2px;margin-top:22px}.result-panel{min-width:0}.result-card{border-top:1px solid #6d775d;border-bottom:1px solid var(--line);padding:25px 0 29px;min-height:295px}.card-top{display:flex;justify-content:space-between;align-items:center}.tag{font-size:10px;color:var(--accent);letter-spacing:2px}.count{font:10px ui-monospace,monospace;color:var(--sub)}h2{font-family:"Songti SC","Noto Serif CJK SC",serif;font-weight:400;font-size:35px;letter-spacing:2px;margin:32px 0 15px}.description{font-size:14px;color:#b9c0b1;line-height:1.95;min-height:55px;max-width:370px;margin:0}.specs{display:flex;gap:24px;margin-top:25px}.spec{font-size:11px;color:#d3d8ca}.spec small{display:block;font-size:9px;color:#879080;margin-bottom:7px;letter-spacing:1px}.draw{margin-top:25px;width:100%;display:flex;justify-content:space-between;align-items:center;background:var(--accent);border:0;border-radius:3px;color:#222a1e;padding:18px 22px;font-size:13px;letter-spacing:2px;transition:background .2s,transform .2s}.draw:hover{background:#e0e8bd}.draw:active{transform:translateY(1px)}.draw:disabled{opacity:.65}.draw .arrow{font-size:21px;line-height:1}.under-button{display:flex;justify-content:space-between;margin-top:14px;color:#828c7e;font-size:10px}.result-card.reveal{animation:reveal .5s ease-out}@keyframes reveal{from{opacity:.25;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}footer{border-top:1px solid var(--line);padding-top:19px;display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#828c7e;line-height:1.8}footer .micro{font-size:9px}.index{color:#68725f;margin-right:9px}@media(min-width:1400px){.page{padding-top:42px}.intro{padding-top:65px}.stage{padding-top:45px;padding-bottom:50px}}@media(max-width:850px){.page{padding:25px 28px}.stage{gap:35px}.wheel-shell{max-width:350px}.hub{width:70px;height:70px}h2{font-size:28px}.category{padding:10px 14px}.intro p{max-width:145px}}@media(max-width:620px){.page{padding:22px}.brand{font-size:14px}header>.micro{font-size:8px;letter-spacing:1px}.intro{display:block;padding:35px 0 25px}.intro p{max-width:none;margin-top:16px}.intro p br{display:none}.categories{gap:7px}.category{flex:1 0 28%;padding:10px 9px}.stage{grid-template-columns:1fr;gap:27px;padding:30px 0}.wheel-shell{max-width:310px}.wheel-top{max-width:310px}.wheel-caption{margin-top:16px}.result-card{min-height:255px;padding-top:20px}h2{margin-top:24px;font-size:32px}.description{min-height:48px}.draw{margin-top:20px}footer{flex-direction:column;gap:6px}footer .micro{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.round-tools{display:flex;align-items:center;justify-content:space-between;max-width:380px;margin:22px auto 0;color:var(--sub);font-size:11px}.round-tools button{background:transparent;color:var(--accent);border:1px solid var(--line);padding:8px 12px;border-radius:3px;font-size:11px}.round-tools button:hover{border-color:var(--accent)}.round-tools button:disabled{opacity:.4}.wheel-caption{margin-top:14px;line-height:1.8}.edit-note{font-size:12px;line-height:1.9;color:#b9c0b1;margin:24px 0 0;padding-top:15px;border-top:1px solid var(--line)}.edit-note span{display:block;font-size:9px;letter-spacing:1px;color:#879080;margin-bottom:5px}.under-button{gap:14px;line-height:1.8}.under-button span:last-child{white-space:nowrap}@media(max-width:620px){.round-tools{max-width:310px}.stage{gap:24px}}
+</style>
+</head>
+<body><main class="page">
+<header><div class="brand"><span class="seal" aria-hidden="true">会</span>会饮酿造</div><div class="micro">HUIYIN BREWING<br>FIELD NOTES / 001</div></header>
+<section class="intro"><div><div class="eyebrow">酿造现场 · 随机镜头挑战</div><h1>今天，拍点啥。</h1></div><p>灵感转一下，现场看一眼。<br>别再只拍发酵罐了。</p></section>
+<nav class="categories" aria-label="选择镜头类型" id="categories"></nav>
+<section class="stage"><div class="wheel-area"><div class="wheel-top micro"><span id="wheel-label">01 / 全部随机</span><span>FOLLOW THE MOMENT</span></div><div class="wheel-shell"><svg id="wheel" viewBox="0 0 400 400" role="img" aria-label="拍摄灵感转盘"></svg><div class="hub" aria-hidden="true"><strong>会饮</strong><span>ON LOCATION</span></div></div><div class="round-tools"><span id="round-info">本轮 6 条灵感</span><button id="refresh" type="button">换一组 ↻</button></div><p class="wheel-caption" id="wheel-caption">五种视角，同一个酿造现场。</p></div>
+<div class="result-panel"><div class="result-card" id="card" aria-live="polite" aria-atomic="true"><div class="card-top"><span class="tag" id="tag">等待一个新视角</span><span class="count" id="count">TAKE —</span></div><h2 id="title">好镜头，就在手边。</h2><p class="description" id="description">每轮随机上盘 6 条，选一种视角，转一下。<br>把习以为常的瞬间，拍成用得上的素材。</p><div class="specs" id="specs"><div class="spec"><small>画幅</small>竖屏 9:16</div><div class="spec"><small>准备</small>擦一下镜头</div><div class="spec"><small>诀窍</small>先稳住，再开拍</div></div><p class="edit-note" id="edit-note"><span>剪辑用法</span>抽中后，看看这一镜可以放在哪里。</p></div><button class="draw" id="draw"><span id="draw-text">转一下，找个镜头</span><span class="arrow" aria-hidden="true">↗</span></button><div class="under-button"><span id="status">不必拍得完美，先留住真实。</span><span id="pool-count"></span></div></div></section>
+<footer><span><span class="index">NOTE 01</span>拍摄不打断操作；腾不开手，就请同事帮忙。</span><span class="micro">REAL PEOPLE. REAL PROCESS. REAL BREW.</span></footer>
+</main>
+<script>
+'use strict';
+const groups=[{id:'all',name:'全部随机',note:'五种视角，同一个酿造现场。'},{id:'action',name:'动作类',note:'让动作发生，镜头稳住。'},{id:'detail',name:'细节类',note:'靠近一点，日常也有纹理。'},{id:'people',name:'人物类',note:'酒的背后，总有一个人。'},{id:'knowledge',name:'知识类',note:'你眼里的常识，别人眼里的新知。'},{id:'odd',name:'奇怪类',note:'越是习以为常，越值得多看一眼。'}];
+const raw={
+  "action": [
+    [
+      "倒进杯",
+      "酒液落进杯底",
+      "拍正常取样时酒液倒入透明杯的过程，画面留住杯口和液面，从第一滴拍到收手。",
+      "8 秒",
+      "侧面近景",
+      "固定",
+      "接在取样镜头后，交代酒液的颜色。"
+    ],
+    [
+      "倒原料",
+      "颗粒落下的声音",
+      "拍同事把称好的原料倒进备料容器，留住颗粒落下的声音和最后空掉的勺子。",
+      "8 秒",
+      "斜侧近景",
+      "固定",
+      "适合做投料段落的开头。"
+    ],
+    [
+      "倒最后一点",
+      "最后一点也算数",
+      "拍日常倒样结束时容器倾斜、最后几滴落下、手收回的完整过程。",
+      "8 秒",
+      "杯口近景",
+      "固定",
+      "最后一滴和收手可以作为段落收尾。"
+    ],
+    [
+      "俯拍倾倒",
+      "液面画了一个圈",
+      "从取样杯上方斜拍正常倒样，让液面形成的涟漪留在画面中央，手机别伸到杯口上。",
+      "8 秒",
+      "斜俯近景",
+      "固定",
+      "可接液体特写，补一个不同角度。"
+    ],
+    [
+      "两杯分样",
+      "这一杯，那一杯",
+      "拍同事依次给两只杯子分样，保持两只杯子都入镜，拍到容器移出画面。",
+      "10 秒",
+      "侧面中近景",
+      "固定",
+      "适合连接到对比或品评的内容。"
+    ],
+    [
+      "切开截面",
+      "一刀，里面露出来",
+      "拍处理果实的一刀，落刀后停两秒，留住刚露出的截面；由同事拍摄。",
+      "8 秒",
+      "侧面近景",
+      "固定",
+      "从完整原料接到内部细节。"
+    ],
+    [
+      "切好归拢",
+      "切完之后的那一下",
+      "请同事拍切好的原料被归拢到容器里的动作，手、原料和容器同时入镜。",
+      "8 秒",
+      "斜俯中近景",
+      "固定",
+      "补上备料过程的完成镜头。"
+    ],
+    [
+      "冲洗工具",
+      "水扫过一把工具",
+      "拍正常冲洗工具时水从一端扫到另一端，收水后再留两秒。",
+      "8 秒",
+      "侧面近景",
+      "固定",
+      "配合清洗前的镜头，讲清日常准备。"
+    ],
+    [
+      "洗完放回",
+      "洗完，归位",
+      "拍一件清洗完成的工具被放回指定位置，留住接触架子的声音。",
+      "6 秒",
+      "正面近景",
+      "固定",
+      "可作为清洗段落最后一镜。"
+    ],
+    [
+      "压下回弹",
+      "压下去，再松开",
+      "拍正常压帽时工具接触原料、压下再抬起的完整动作，站在操作区外。",
+      "10 秒",
+      "侧面中景",
+      "固定",
+      "完整动作方便剪出过程节奏。"
+    ],
+    [
+      "转动手柄",
+      "转完才停机",
+      "拍同事正常转动手柄，画面带到手柄连接的位置，动作结束后留两秒。",
+      "8 秒",
+      "侧面近景",
+      "固定",
+      "交代人如何操作设备。"
+    ],
+    [
+      "转杯观察",
+      "转一转，看一看",
+      "拍酿酒师正常观察样品时轻转杯子的动作，杯沿和手都别出画面。",
+      "8 秒",
+      "手部近景",
+      "固定",
+      "接人物神情，组成观察样品的小段落。"
+    ],
+    [
+      "开原料袋",
+      "今天从这一袋开始",
+      "拍打开当天原料包装的动作，带到可公开的原料名称和袋口。",
+      "8 秒",
+      "斜侧近景",
+      "固定",
+      "用作当天生产记录的开场。"
+    ],
+    [
+      "打开工具箱",
+      "开工的第一声",
+      "拍同事打开工具箱、取出一件工具，镜头从开之前就开始录。",
+      "8 秒",
+      "侧面中近景",
+      "固定",
+      "适合剪进开工准备。"
+    ],
+    [
+      "关上箱盖",
+      "这一箱完成了",
+      "拍正常装箱完成后合盖的动作，保留双手离开箱子的两秒。",
+      "8 秒",
+      "斜俯中景",
+      "固定",
+      "交代包装完成，收尾自然。"
+    ],
+    [
+      "投一勺",
+      "一勺落下",
+      "拍一勺称好的原料正常投入容器，镜头带到原料从勺边落下；不靠近运行部件。",
+      "8 秒",
+      "侧面中近景",
+      "固定",
+      "给投料过程补一条动作特写。"
+    ],
+    [
+      "抽样到线",
+      "样品慢慢到位",
+      "拍日常取样时液面在杯里升高，等取样结束后多留两秒。",
+      "10 秒",
+      "平视近景",
+      "固定",
+      "可连接到测量读数和记录。"
+    ],
+    [
+      "装满一格",
+      "空位被填上",
+      "拍一只瓶子被放进箱中空格，画面里同时留几格已放好的瓶子。",
+      "6 秒",
+      "斜俯近景",
+      "固定",
+      "用一个动作交代装箱进度。"
+    ],
+    [
+      "贴正标签",
+      "对齐，抚平",
+      "拍同事贴标签、抚平边缘的一次完整动作，等手离开后留住成品。",
+      "8 秒",
+      "侧面近景",
+      "固定",
+      "连接生产现场与成品展示。"
+    ],
+    [
+      "递一件工具",
+      "你伸手，我接住",
+      "拍同事正常传递工具，两双手和工具都入镜，留住接住的瞬间。",
+      "6 秒",
+      "平视近景",
+      "固定",
+      "作为人物协作的转场镜头。"
+    ]
+  ],
+  "detail": [
+    [
+      "手套褶皱",
+      "工作落在手上",
+      "拍手套握住干燥工具时自然形成的褶皱，先对焦手，再拍一次正常拿起。",
+      "6 秒",
+      "手部特写",
+      "固定",
+      "配操作全景，补充触感和细节。"
+    ],
+    [
+      "手写一笔",
+      "今天记下的数字",
+      "拍在可公开的生产记录上写下一笔，画面只取手和那一小块记录。",
+      "8 秒",
+      "斜俯近景",
+      "固定",
+      "连接读数和记录，说明操作有后续。"
+    ],
+    [
+      "气泡破掉",
+      "等一颗小泡泡",
+      "拍取样杯里可见的泡沫，对好焦，留住泡沫缓慢变化，不必等大动静。",
+      "8 秒",
+      "侧面特写",
+      "固定",
+      "可放在两段动作之间，给剪辑留呼吸。"
+    ],
+    [
+      "泡沫边界",
+      "酒液和泡沫的分界",
+      "拍透明杯里酒液与泡沫的交界，侧光下保持杯沿、泡沫和液体都有一点。",
+      "6 秒",
+      "平视特写",
+      "固定",
+      "给品评或出杯段落补质感。"
+    ],
+    [
+      "酒液透光",
+      "颜色自己说话",
+      "把正常取样的透明杯置于已有侧光里，锁定对焦，拍清液体颜色。",
+      "6 秒",
+      "平视近景",
+      "固定",
+      "搭配酿酒师对颜色的描述。"
+    ],
+    [
+      "两杯颜色",
+      "差别放在一起看",
+      "将可展示的两份样品并排放在同一光线下，拍清两杯颜色，别改变摆位。",
+      "8 秒",
+      "平视近景",
+      "固定",
+      "做样品对比时可以直接使用。"
+    ],
+    [
+      "酵母沉淀",
+      "杯底也有故事",
+      "拍正常取样杯底可见的沉淀，带到沉淀与上层液体的边界。",
+      "7 秒",
+      "杯底特写",
+      "固定",
+      "配一句酿酒师说明，作为知识内容的画面。"
+    ],
+    [
+      "葡萄破皮",
+      "一颗破皮的葡萄",
+      "选正常处理中的破皮葡萄，拍果皮和汁水，不用摆成水果广告。",
+      "6 秒",
+      "斜俯特写",
+      "固定",
+      "连接采收原料和后面的加工过程。"
+    ],
+    [
+      "果梗纹理",
+      "果梗不是配角",
+      "拍分拣时留下的果梗和一两片果皮，画面边上保留正在工作的手。",
+      "6 秒",
+      "俯视近景",
+      "固定",
+      "让原料细节仍然带着现场信息。"
+    ],
+    [
+      "杯壁水珠",
+      "杯子刚从冷处来",
+      "拍冰凉成品杯外壁的水珠，焦点放在最近的几滴，杯子保持不动。",
+      "6 秒",
+      "平视特写",
+      "固定",
+      "适合接到成品或饮用场景。"
+    ],
+    [
+      "工具滴水",
+      "最后几滴水",
+      "拍正常清洗后放在沥水架上的工具，留住水滴落下和轻微的声音。",
+      "8 秒",
+      "侧面近景",
+      "固定",
+      "清洗段落的安静收尾。"
+    ],
+    [
+      "仪表读数",
+      "给数字一个镜头",
+      "拍一处可公开读数，点按屏幕对焦，确认数字清楚再录六秒。",
+      "6 秒",
+      "正面近景",
+      "固定",
+      "搭配记录或解释，明确现场信息。"
+    ],
+    [
+      "杯上刻度",
+      "液面停在哪儿",
+      "让取样杯刻度和液面同时清楚，平视拍，别从上方俯拍。",
+      "6 秒",
+      "平视近景",
+      "固定",
+      "测量段落里可直接接读数解说。"
+    ],
+    [
+      "原料颗粒",
+      "一勺里有什么",
+      "拍正常备料时一勺原料的颗粒形状，让勺子停稳几秒再继续工作。",
+      "6 秒",
+      "斜侧特写",
+      "固定",
+      "用于介绍今天用到的原料。"
+    ],
+    [
+      "酒花纹理",
+      "把酒花拍清楚",
+      "拍备料容器里已有的酒花，点按对焦纹理，别把手机伸进容器。",
+      "6 秒",
+      "斜俯特写",
+      "固定",
+      "为投料镜头补充原料辨识度。"
+    ],
+    [
+      "包装日期",
+      "今天这一批",
+      "拍可公开的成品日期或批次标识，摆正画面，录到文字能看清。",
+      "6 秒",
+      "正面特写",
+      "固定",
+      "交代这次生产的成品信息。"
+    ],
+    [
+      "标签边缘",
+      "贴好的那一角",
+      "拍刚贴好的标签被手指最后抚平，手移开后留下清楚的品牌字样。",
+      "6 秒",
+      "斜侧近景",
+      "固定",
+      "适合放在成品揭晓前。"
+    ],
+    [
+      "瓶口一排",
+      "排队等出场",
+      "从侧面拍一排已完成的瓶子，对焦最近的瓶口，远处自然虚化。",
+      "6 秒",
+      "平视近景",
+      "固定",
+      "作为包装结束或库存场景的补镜。"
+    ],
+    [
+      "工具磨痕",
+      "这件工具有年头",
+      "拍一件正常在用的工具把手上的使用痕迹，再让同事拿起它。",
+      "8 秒",
+      "把手特写",
+      "固定",
+      "配工具故事或人物采访。"
+    ],
+    [
+      "收工台面",
+      "最后一块水痕",
+      "拍清洁收尾时抹布擦过台面，留下干净的一小块画面两秒。",
+      "8 秒",
+      "侧面近景",
+      "固定",
+      "直接用于一天工作的结尾。"
+    ]
+  ],
+  "people": [
+    [
+      "背影进门",
+      "今天的人到了",
+      "从工作区内拍同事背对镜头走向工作台，留住周围环境，不用跟拍。",
+      "8 秒",
+      "背面全景",
+      "固定",
+      "开场同时交代人物和地点。"
+    ],
+    [
+      "背影忙碌",
+      "看背影也知道在忙",
+      "从斜后方拍同事在台前的一次完整操作，画面带到双手在做什么。",
+      "10 秒",
+      "斜后中景",
+      "固定",
+      "可与手部特写剪成完整工作段落。"
+    ],
+    [
+      "背影并肩",
+      "两个人看同一件事",
+      "拍两位同事并肩观察样品的背影，留住自然指向样品的手势。",
+      "8 秒",
+      "背面中景",
+      "固定",
+      "适合讲协作或讨论。"
+    ],
+    [
+      "背影收工",
+      "人离开，现场留下",
+      "从固定位置拍同事整理完走出画面，空下来的现场再录三秒。",
+      "10 秒",
+      "背面全景",
+      "固定",
+      "一天记录的自然片尾。"
+    ],
+    [
+      "过肩记录",
+      "看见他的判断",
+      "请同事从肩旁拍你看读数再写记录，画面只带可公开的信息。",
+      "10 秒",
+      "过肩近景",
+      "固定",
+      "把观察与记录连成一个小故事。"
+    ],
+    [
+      "过肩备料",
+      "跟着这双手",
+      "请同事从肩旁拍一次称料或备料，双手、工具和原料同时入镜。",
+      "10 秒",
+      "过肩中近景",
+      "固定",
+      "给观众进入工作现场的感觉。"
+    ],
+    [
+      "侧脸观察",
+      "看一眼，再确认",
+      "先征得同意，拍同事看取样杯时的侧脸和杯子，别让他专门看镜头。",
+      "8 秒",
+      "侧面半身",
+      "固定",
+      "可接样品特写，交代是谁在判断。"
+    ],
+    [
+      "闻香表情",
+      "闻完之后的两秒",
+      "征得同意，拍同事正常闻样品，重点留住杯子放下后的自然表情。",
+      "8 秒",
+      "正侧半身",
+      "固定",
+      "配一句真实感受，作为品评内容。"
+    ],
+    [
+      "等读数",
+      "等，不等于没事干",
+      "拍同事等读数稳定的片刻，把人、仪表和观察动作留在同一画面。",
+      "10 秒",
+      "侧面中景",
+      "固定",
+      "给测量过程补上人物视角。"
+    ],
+    [
+      "等同事",
+      "接力前的半秒",
+      "拍正常协作时一人准备接过物件、另一人递来的过程，别让人重演。",
+      "8 秒",
+      "双人中景",
+      "固定",
+      "连接两个岗位的工作。"
+    ],
+    [
+      "讨论一下",
+      "这个再看一眼",
+      "征得同意后，拍同事指着样品讨论，留住一句能听清的真实交流。",
+      "12 秒",
+      "双人中景",
+      "固定",
+      "适合表现判断和协作，不只拍设备。"
+    ],
+    [
+      "确认点头",
+      "点头，就继续",
+      "征得同意，记录同事正常核对完工作后点头、继续操作的瞬间。",
+      "8 秒",
+      "侧面中景",
+      "固定",
+      "可接在讨论或检查之后。"
+    ],
+    [
+      "坐下喝水",
+      "酿酒师也要补水",
+      "在休息区征得同意，拍同事坐下喝水再松口气，保留一点工作服细节。",
+      "8 秒",
+      "平视中景",
+      "固定",
+      "让一天记录有工作之外的节奏。"
+    ],
+    [
+      "午饭开盒",
+      "先给自己投个料",
+      "征得同意，在休息区拍同事打开饭盒的真实一刻，留住一句午饭评价。",
+      "10 秒",
+      "侧面中景",
+      "固定",
+      "适合团队日常短片的中场。"
+    ],
+    [
+      "穿好围裙",
+      "进入工作状态",
+      "拍同事开工前系好围裙或整理工作服的动作，别打断实际准备。",
+      "8 秒",
+      "侧面半身",
+      "固定",
+      "接在进门镜头后，交代开工。"
+    ],
+    [
+      "找工具",
+      "手比眼睛更熟",
+      "拍同事从熟悉的位置取出工具，镜头包含人和工具架。",
+      "8 秒",
+      "侧面中景",
+      "固定",
+      "用日常动作表现熟练感。"
+    ],
+    [
+      "递杯交流",
+      "你也闻一下",
+      "征得同意，拍同事把样品递给另一人，两人的手和自然反应都带到。",
+      "10 秒",
+      "双人中景",
+      "固定",
+      "作为品评段落的衔接。"
+    ],
+    [
+      "认真贴标",
+      "今天负责对齐的人",
+      "从侧面拍同事专注贴好一张标签，镜头同时看见脸和手。",
+      "8 秒",
+      "侧面半身",
+      "固定",
+      "把成品制作和具体的人联系起来。"
+    ],
+    [
+      "真实笑场",
+      "笑的原因别剪丢",
+      "先征得同意，记录工作间隙的一句玩笑和大家反应，别只录到最后的笑。",
+      "12 秒",
+      "双人中景",
+      "固定",
+      "一句原因加一个反应，能单独成段。"
+    ],
+    [
+      "一句收工",
+      "今天最满意什么",
+      "收工时征得同意，拍同事用一句话回答今天最满意的一件事，带上现场。",
+      "15 秒",
+      "平视半身",
+      "固定",
+      "可作为当天记录的结束语。"
+    ]
+  ],
+  "knowledge": [
+    [
+      "为什么洗",
+      "为什么还要洗这遍",
+      "拍正在做的清洗，问同事：“这一次清洗主要解决什么？”留一句短回答。",
+      "15 秒",
+      "人和工具同框",
+      "固定",
+      "一个实际动作加解释，可独立做小知识。"
+    ],
+    [
+      "为什么等",
+      "等的是时间还是状态",
+      "拍现场正在等待的步骤，问：“你们到底在等哪个变化？”让同事指给镜头看。",
+      "15 秒",
+      "人和对象同框",
+      "固定",
+      "用可见变化解释看似无事发生的片刻。"
+    ],
+    [
+      "为什么取样",
+      "这一杯想知道什么",
+      "拍正常取样，请同事说明这次要检查什么，最后给样品留两秒。",
+      "15 秒",
+      "侧面中近景",
+      "固定",
+      "连接取样、检查和结果。"
+    ],
+    [
+      "参数温度",
+      "今天关注这个温度",
+      "拍可公开的温度读数，请同事说一句今天为什么关注它，不展示保密设置。",
+      "15 秒",
+      "仪表近景",
+      "固定",
+      "给温度数字补充具体意义。"
+    ],
+    [
+      "参数时间",
+      "计时从哪一刻开始",
+      "拍日常计时动作，问同事：“这一段从什么时候开始算？”录到一句完整回答。",
+      "15 秒",
+      "手部中近景",
+      "固定",
+      "适合把一个工序解释清楚。"
+    ],
+    [
+      "参数重量",
+      "这一勺怎么确认",
+      "拍正常称料和可公开的读数，请同事讲称量时最容易漏掉的一件事。",
+      "15 秒",
+      "秤和手同框",
+      "固定",
+      "称料画面可以配一句实用解释。"
+    ],
+    [
+      "两种原料",
+      "看着像，用法不同",
+      "并排拍两种可展示的原料，请同事指着说一个外观差异和用途差异。",
+      "15 秒",
+      "俯视近景",
+      "固定",
+      "天然适合做两者对比。"
+    ],
+    [
+      "两份样品",
+      "同一光线下看差别",
+      "并排拍两份允许展示的样品，问：“最先能看出来的区别是什么？”",
+      "15 秒",
+      "平视近景",
+      "固定",
+      "画面能对应解说里的差异。"
+    ],
+    [
+      "两件工具",
+      "为什么今天用这把",
+      "拍两件用途接近的工具，请同事拿起今天使用的一件，解释选择原因。",
+      "15 秒",
+      "手部中近景",
+      "固定",
+      "用具体选择讲清操作习惯。"
+    ],
+    [
+      "判断完成",
+      "你怎么知道好了",
+      "对准正常检查的样品，问：“看哪一点，就知道可以了？”请同事指出来。",
+      "15 秒",
+      "过肩近景",
+      "固定",
+      "观众既能听到答案，也能看到依据。"
+    ],
+    [
+      "泡沫说明",
+      "这层泡沫说明什么",
+      "拍眼前实际可见的泡沫，请酿酒师解释当前这层泡沫，不泛讲所有泡沫。",
+      "15 秒",
+      "泡沫近景",
+      "固定",
+      "让漂亮特写同时带一点知识。"
+    ],
+    [
+      "颜色来源",
+      "这个颜色从哪来",
+      "拍透光的样品，请同事用一句话解释今天这杯颜色的主要来源。",
+      "15 秒",
+      "杯子近景",
+      "固定",
+      "适合配原料镜头，组成短内容。"
+    ],
+    [
+      "闻的是什么",
+      "这一闻在找什么",
+      "拍正常闻香动作，问：“你现在主要在确认什么气味？”保留完整回答。",
+      "15 秒",
+      "侧面半身",
+      "固定",
+      "给人物闻香镜头一个明确内容。"
+    ],
+    [
+      "杯底沉淀",
+      "杯底这个是什么",
+      "拍正常样品杯底，让酿酒师针对这一杯解释沉淀是什么，别预设结论。",
+      "15 秒",
+      "杯底近景",
+      "固定",
+      "让观众常见的疑问有现场答案。"
+    ],
+    [
+      "工具名字",
+      "这个东西叫什么",
+      "请同事拿起一件陌生工具，说名字，再做一次正常用途示范。",
+      "15 秒",
+      "手部中近景",
+      "固定",
+      "名字加用途，本身就是一条选题。"
+    ],
+    [
+      "记录理由",
+      "这个为什么要记",
+      "拍一项可公开的记录，请同事解释以后会在什么情况下回头看它。",
+      "15 秒",
+      "手和记录同框",
+      "固定",
+      "让写字镜头有实际故事。"
+    ],
+    [
+      "工序顺序",
+      "为什么先做这个",
+      "拍正在进行的一步，问同事：“为什么要先做它，再做下一步？”",
+      "15 秒",
+      "侧面中景",
+      "固定",
+      "用于解释流程，不必拍完整条生产线。"
+    ],
+    [
+      "新手误会",
+      "第一次来容易看错啥",
+      "请同事指着现场一个容易被误解的东西，用一句话说清它实际在做什么。",
+      "15 秒",
+      "人和对象同框",
+      "固定",
+      "有问题也有答案，适合短视频开头。"
+    ],
+    [
+      "一句翻译",
+      "把行话翻译一下",
+      "选同事刚说过的一个术语，请他拿着相关工具或样品，用日常语言解释。",
+      "15 秒",
+      "平视半身",
+      "固定",
+      "可单独剪成一个术语小栏目。"
+    ],
+    [
+      "今日变化",
+      "今天和昨天差在哪",
+      "拍可公开的样品或现场记录，让同事指出今天最明显的一个变化。",
+      "15 秒",
+      "人和样品同框",
+      "固定",
+      "适合连续记录同一批次的进展。"
+    ]
+  ],
+  "odd": [
+    [
+      "颗粒揭晓",
+      "猜猜这是什么",
+      "先拍一小块原料纹理三秒，再慢慢拉远带到完整容器，让谜底在画面里出现。",
+      "10 秒",
+      "特写到近景",
+      "缓慢拉远",
+      "有悬念和揭晓，可直接做开场。"
+    ],
+    [
+      "影子开工",
+      "今天由影子代班",
+      "拍墙上手拿工具的影子，再轻移镜头露出真人和工具，动作自然进行。",
+      "10 秒",
+      "墙面到中景",
+      "轻轻横移",
+      "先陌生后熟悉，适合作为转场。"
+    ],
+    [
+      "工具排队",
+      "工具也要站队",
+      "拍正常整理时一件件工具归位，保持机位不动，最后留住整齐的一排。",
+      "12 秒",
+      "正面中景",
+      "固定",
+      "动作重复有节奏，也有完成结果。"
+    ],
+    [
+      "最小工具",
+      "今天最小的员工",
+      "请同事把一件小工具放在掌心，拍清楚，再说它在现场负责什么。",
+      "12 秒",
+      "掌心近景",
+      "固定",
+      "小东西加实际用途，可以单独成段。"
+    ],
+    [
+      "工位杯子",
+      "哪杯才是我的水",
+      "在休息区拍同事找自己的水杯，说一句自己的辨认方法，不移动生产样品。",
+      "10 秒",
+      "侧面中景",
+      "固定",
+      "轻松的人物日常，有动作也有一句话。"
+    ],
+    [
+      "开工三声",
+      "今天从三个声音开始",
+      "分别固定拍开工具箱、拿工具、放上工作台，各录四秒，尽量不说话。",
+      "3 × 4 秒",
+      "侧面近景",
+      "三个固定镜头",
+      "按声音剪在一起，就是开工短片头。"
+    ],
+    [
+      "收工三声",
+      "今天以三个声音结束",
+      "分别拍放回工具、合上箱盖、关休息区门，各录四秒，留住自然声音。",
+      "3 × 4 秒",
+      "侧面近景",
+      "三个固定镜头",
+      "按动作顺序剪成收工片尾。"
+    ],
+    [
+      "最后一格",
+      "今天的强迫症被治好了",
+      "拍正常装箱时最后一个空格被填满，放好后静止两秒。",
+      "8 秒",
+      "斜俯近景",
+      "固定",
+      "有等待和完成感，适合节奏短片。"
+    ],
+    [
+      "贴标手速",
+      "看这双手有多熟",
+      "拍同事连续贴好两件成品的完整动作，别加速拍摄，保留原声。",
+      "12 秒",
+      "斜侧近景",
+      "固定",
+      "后期可选原速或加速，展示真实熟练度。"
+    ],
+    [
+      "工具原位",
+      "闭着眼都知道在哪",
+      "拍同事自然伸手取常用工具，再问：“你每天拿它多少次？”",
+      "12 秒",
+      "侧面中景",
+      "固定",
+      "一个熟练动作加回答，能带出人物习惯。"
+    ],
+    [
+      "酿酒午饭",
+      "今天给人投什么料",
+      "在休息区拍打开饭盒的手，征得同意后问一句：“今天给自己投什么料？”",
+      "12 秒",
+      "饭盒近景",
+      "固定",
+      "有内部玩笑，也有完整的日常片段。"
+    ],
+    [
+      "脚步经过",
+      "先听到人，再看到人",
+      "在安全、不挡路的位置低机位拍同事穿工作鞋走过，手机握在手里。",
+      "8 秒",
+      "低机位中景",
+      "固定",
+      "可作为进场或工序之间的转场。"
+    ],
+    [
+      "小大同框",
+      "小杯子，大现场",
+      "前景放一杯可展示样品，背景带到酿造现场，焦点放在杯子上。",
+      "6 秒",
+      "平视近景",
+      "固定",
+      "一镜交代产品和它的来处。"
+    ],
+    [
+      "工位反差",
+      "开工前，收工后",
+      "在同一位置拍正常开工前与整理后的工作台，各留五秒，保持取景范围一致。",
+      "2 × 5 秒",
+      "正面中景",
+      "两个固定镜头",
+      "前后对比可以直接剪成一组。"
+    ],
+    [
+      "现场找圆",
+      "今天的三个圆",
+      "分别拍杯口、瓶口和工具上的圆形部件，各四秒，圆都放在画面中央。",
+      "3 × 4 秒",
+      "正面或俯视",
+      "三个固定镜头",
+      "相同形状方便做匹配转场。"
+    ],
+    [
+      "声音猜谜",
+      "这声是怎么来的",
+      "先对准工具录一次正常使用的声音，再把镜头拉远露出操作的人。",
+      "10 秒",
+      "近景到中景",
+      "缓慢拉远",
+      "声音和揭晓在同一条素材里。"
+    ],
+    [
+      "空位留下",
+      "这里刚才还很忙",
+      "拍同事整理完台面离开，镜头继续留在空位三秒，别急着停录。",
+      "10 秒",
+      "平视中景",
+      "固定",
+      "给热闹的工作段落留一个安静结尾。"
+    ],
+    [
+      "今日小成就",
+      "今天最顺手的一下",
+      "请同事选一个今天做得顺手的正常小动作，趁下一次工作时完整拍下来。",
+      "10 秒",
+      "侧面中近景",
+      "固定",
+      "配同事一句解释，表现日常成就感。"
+    ],
+    [
+      "这也要拍",
+      "市场部就爱看这个",
+      "请同事指出一个“这有什么好拍的”的日常动作，拍完整，再录这句吐槽。",
+      "15 秒",
+      "侧面中景",
+      "固定",
+      "吐槽可以当开头，动作就是后面的答案。"
+    ],
+    [
+      "今天一件事",
+      "用一件东西讲今天",
+      "请同事拿一件代表今天工作的工具或样品，说一句为什么选它。",
+      "15 秒",
+      "平视半身",
+      "固定",
+      "一句话交代一天，有物件也有人。"
+    ]
+  ]
+};
+const cards=Object.entries(raw).flatMap(([group,rows])=>rows.map((r,i)=>({group,id:group+i,label:r[0],title:r[1],tip:r[2],duration:r[3],angle:r[4],motion:r[5],use:r[6]})));
+const $=id=>document.getElementById(id);
+let selected='all',busy=false,rotation=0,take=0,lastId=null,batch=[],roundUsed=false;
+const recent={},previousBatches={};
+function pool(){return cards.filter(c=>selected==='all'||c.group===selected)}
+function shuffled(items){const copy=[...items];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]]}return copy}
+function remaining(){const p=pool();if(!recent[selected])recent[selected]=new Set();let available=p.filter(c=>!recent[selected].has(c.id)&&c.id!==lastId);if(!available.length){recent[selected].clear();available=p.filter(c=>c.id!==lastId)}return available}
+function newRound(){
+  const available=remaining(),previous=new Set(previousBatches[selected]||[]);
+  const fresh=available.filter(c=>!previous.has(c.id));
+  // Keep one undrawn idea even at the end of a cycle; prefer six new faces.
+  const anchor=shuffled(fresh.length?fresh:available)[0];
+  const other=pool().filter(c=>c.id!==anchor.id&&c.id!==lastId);
+  const preferred=shuffled(other.filter(c=>!previous.has(c.id)));
+  const fallback=shuffled(other.filter(c=>previous.has(c.id)));
+  batch=shuffled([anchor,...preferred,...fallback].slice(0,6));
+  previousBatches[selected]=batch.map(c=>c.id);roundUsed=false;
+  renderWheel();$('round-info').textContent='本轮 6 条 · 随机换新';
+  $('pool-count').textContent=pool().length+' 条灵感';
+}
+function sectors(){return batch.map(c=>c.label)}
+function renderWheel(){const labels=sectors(),step=360/labels.length,point=(r,a)=>[200+r*Math.sin(a*Math.PI/180),200-r*Math.cos(a*Math.PI/180)];$('wheel').innerHTML=labels.map((label,i)=>{const start=i*step-step/2,end=start+step,p1=point(190,start),p2=point(190,end),t=point(132,i*step);return `<path d="M200 200 L${p1.join(' ')} A190 190 0 0 1 ${p2.join(' ')} Z" fill="${i%2?'#232b24':'#1c231e'}" stroke="#657358" stroke-opacity=".36" stroke-width=".8"/><text x="${t[0]}" y="${t[1]}" fill="#c7ceba" font-size="12" letter-spacing="1" text-anchor="middle" dominant-baseline="middle" transform="rotate(${i*step},${t[0]},${t[1]})">${label}</text>`}).join('')+'<circle cx="200" cy="200" r="190" fill="none" stroke="#798669" stroke-width="1"/>';rotation=0;$('wheel').style.transform='rotate(0deg)';$('wheel').setAttribute('aria-label','本轮六条灵感：'+labels.join('、'));}
+function choose(id){if(busy)return;selected=id;document.querySelectorAll('.category').forEach(b=>{const on=b.dataset.id===id;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});const g=groups.find(g=>g.id===id);$('wheel-label').textContent=`0${groups.indexOf(g)+1} / ${g.name}`;$('wheel-caption').textContent=g.note;newRound();$('draw-text').textContent='转一下，从这 6 条里选';$('status').textContent='已换好 6 条，转盘停在哪条就拍哪条。';}
+groups.forEach(g=>{const b=document.createElement('button');b.className='category';b.dataset.id=g.id;b.textContent=g.name;b.setAttribute('aria-pressed','false');b.onclick=()=>choose(g.id);$('categories').appendChild(b)});
+function pick(){const options=batch.filter(c=>!recent[selected].has(c.id)&&c.id!==lastId);return options[Math.floor(Math.random()*options.length)]}
+function setBusy(value){busy=value;$('draw').disabled=value;$('refresh').disabled=value;document.querySelectorAll('.category').forEach(b=>b.disabled=value)}
+async function spin(){
+  if(busy)return;
+  if(roundUsed)newRound();
+  setBusy(true);$('draw-text').textContent='换个角度，看看现场…';$('status').textContent='正在从本轮 6 条里抽取';
+  try{
+    const card=pick(),index=batch.findIndex(c=>c.id===card.id),n=batch.length;
+    const desired=(360-index*360/n)%360,delta=(desired-rotation%360+360)%360,next=rotation+360*5+delta;
+    const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!reduce&&$('wheel').animate){const a=$('wheel').animate([{transform:`rotate(${rotation}deg)`},{transform:`rotate(${next}deg)`}],{duration:3800,easing:'cubic-bezier(.14,.65,.12,1)',fill:'forwards'});await a.finished;$('wheel').style.transform=`rotate(${next}deg)`;a.cancel()}else{$('wheel').style.transform=`rotate(${next}deg)`}
+    rotation=next;take++;lastId=card.id;recent[selected].add(card.id);roundUsed=true;
+    $('tag').textContent=groups.find(g=>g.id===card.group).name+' / '+card.label;$('count').textContent='TAKE '+String(take).padStart(2,'0');$('title').textContent=card.title;$('description').textContent=card.tip;
+    $('specs').replaceChildren();[['时长',card.duration],['机位',card.angle],['运镜',card.motion]].forEach(([label,value])=>{const el=document.createElement('div');el.className='spec';const small=document.createElement('small');small.textContent=label;el.append(small,document.createTextNode(value));$('specs').appendChild(el)});
+    $('edit-note').replaceChildren();const label=document.createElement('span');label.textContent='剪辑用法';$('edit-note').append(label,document.createTextNode(card.use));
+    $('card').classList.remove('reveal');void $('card').offsetWidth;$('card').classList.add('reveal');$('round-info').textContent='本轮已抽中 · '+card.label;
+    $('status').textContent=take%3===0?'市场部今天有饭吃了。':'竖屏拍摄，前后各多留 2 秒。';
+  }catch(error){$('status').textContent='这次没有转完，请再试一次。';console.error(error)}finally{setBusy(false);$('draw-text').textContent=roundUsed?'再来一次，换 6 条再转':'转一下，从这 6 条里选'}
+}
+$('refresh').onclick=()=>{if(busy)return;newRound();$('draw-text').textContent='转一下，从这 6 条里选';$('status').textContent='换好一组了，遇到现场没有的就再换。'};
+$('draw').onclick=spin;choose('all');
+</script></body></html>
